@@ -1,0 +1,8 @@
+Origin: IceCool Tech's Repo
+Label: IceCool Tech's Repo
+Suite: stable
+Version: 0.1.0
+Codename: 2020
+Architecture: iphoneos-arm
+Components: main
+Description: IceCool Tech's Themes
