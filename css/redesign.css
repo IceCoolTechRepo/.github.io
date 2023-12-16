@@ -34,12 +34,14 @@
     position: fixed;
     top: 0px; /* Adjust this value based on your layout */
     left: 42px; /* Adjust this value based on your layout */
+    transition: .25s;
 }
 
 #navlogo {
     height: 23px;
     width: 27px;
     background-color: transparent;
+    transition: .25s;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none; 
@@ -411,16 +413,27 @@
             pointer-events: none;
         }
 
+        #logotxt {
+            opacity: 0;
+            transition: opacity 0.1s;
+            
+        }
+
+        #navlogo {
+            opacity: 0;
+            transition: opacity 0.1s;
+        }
+
     }
 
     #menubutton {
         display: flex;
         flex-direction: column;
         background-color: transparent;
-        height: 100px;
         cursor: pointer;
         float: right;
         margin-right: 10px;
+        outline: none;
     }
 
     #menulineT,
@@ -448,7 +461,7 @@
         flex-direction: column;
         margin-right: 0;
         float: left;
-        padding-top: 55px;
+        padding-top: 40px;
         opacity: 100;
         transition: opacity 1s;
         -webkit-touch-callout: none;
@@ -467,7 +480,7 @@
         display: flex;
         flex-direction: column;
         margin-right: 0;
-        font-size: 25px;
+        font-size: 27px;
         font-weight: 600;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
