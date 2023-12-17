@@ -10,6 +10,7 @@
       color: var(--text);
       padding:0;
       margin:0;
+      -webkit-font-smoothing: antialiased;
   }
 
 #navbar {
@@ -405,7 +406,7 @@
         height: 100%;
         z-index: 999;
         transition: .25s cubic-bezier(0.03, 0.25, 0.25, 1);
-        background: rgba(255, 255, 255);
+        background: rgb(255, 255, 255);
 
         #bannertxt {
             opacity: 0;
@@ -415,15 +416,13 @@
 
         #logotxt {
             opacity: 0;
-            transition: opacity 0.1s;
-            
+            transition: opacity 0.1s;   
         }
 
         #navlogo {
             opacity: 0;
             transition: opacity 0.1s;
         }
-
     }
 
     #menubutton {
@@ -494,6 +493,14 @@
         transform: translatex(2px);
         transition: .1s ease-in-out;
     }
+
+    body.content-hidden #itemHead,
+    body.content-hidden #item,
+    body.content-hidden .footercontainer {
+        opacity: 0;
+        transition: opacity .3s;
+        pointer-events: none;
+    }
 }
 
 /* Error Page CSS */
@@ -522,6 +529,86 @@
 }
 
 #err1return:hover {
+    transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.975);
+    transform:scale(1.1);
+}
+
+/* Release Notes Page CSS */
+
+#RC {
+    margin-top: 75px;
+    height: 413px;
+    min-height: 413px;
+    max-height: 413px;
+    margin-bottom: 17px;
+    background: #6e6e70bb;
+    text-align: center;
+    align-items: center;
+}
+
+#sub2 {
+    font-size: 15px;
+    background-color: transparent;
+    font-weight: 400;
+    color: #FFF;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.RCtit {
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 130px;
+}
+
+.header-external {
+    font-weight: 700;
+    font-size: large;
+}
+
+.field-desc {
+    border: none;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 50px;
+}
+
+#RC1 {
+    margin-top: 15px;
+    min-height: 206px;
+    max-height: 1000px;
+    margin-bottom: 17px;
+    background: #1f5fff7c;
+    text-align: center;
+    align-items: center;
+}
+
+#sub3 {
+    font-size: 20px;
+    background-color: transparent;
+    font-weight: 600;
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.RCtit1 {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 35px;
+}
+
+#cfu {
+    font-weight: 700;
+    margin-top: 60px;
+    transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.975);
+}
+
+#cfu:hover {
     transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.975);
     transform:scale(1.1);
 }
