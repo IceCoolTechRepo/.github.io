@@ -20,8 +20,6 @@
     <meta name="theme-color" content="#FFFFFF">
 </head>
 
-<body class="body">
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function() {
@@ -31,10 +29,14 @@ $(document).ready(function() {
         if (!isMenuButton) {
             $(this).addClass('active');
             $('#navbar').addClass('active');
+            $('body').addClass('content-hidden');
+            $('body').css('overflow', 'hidden');
             isMenuButton = true;
         } else {
             $(this).removeClass('active');
             $('#navbar').removeClass('active');
+            $('body').removeClass('content-hidden');
+            $('body').css('overflow', ''); 
             isMenuButton = false;
         }
     });
@@ -66,7 +68,7 @@ $(document).ready(function() {
      </div>
     <div id="banner">
         <div class="container">
-            <p id="bannertxt">New Releases Available. <a href="/store.html" id="bannerlink">View Store.</a></p>
+            <p id="bannertxt">Updates Available. <a href="/changelog.html" id="bannerlink">What's New?</a></p>
         </div>
     </div>
 </div>
@@ -159,5 +161,4 @@ $(document).ready(function() {
     </div>
 </div>
 
-</body>
 </html>
