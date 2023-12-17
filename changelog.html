@@ -13,178 +13,127 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-width=1.0">
-    <title>HexaCore Changelog</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/pages.css">
-    <link rel="shortcut icon" type="png/favicon" href="/CydiaIcon.png" />
-    <meta name="theme-color" content="#0052CB">
+    <title>Changelog</title>
+    <link rel="stylesheet" href="/css/redesign.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="shortcut icon" type="png/favicon" href="/favicon.png" />
+    <meta name="theme-color" content="#FFFFFF">
 </head>
 
-<body>
-
-    <nav class="navbar">
-           <a href="/index.html">
-                <img class="primary-icon" src="/images/HexaCore.png" />
-           </a>
-        <ul class="nav-list" id="navi-list">
-            <li class="list-item">
-                <a href="/store.html">Store</a>
-            </li>
-            <li class="list-item">
-                <a href="/news.html">Newsroom</a>
-            </li>
-            <li class="list-item">
-                <a href="/changelog.html">Changelog</a>
-            </li>
-        </ul>
-        <div class="menu" id="toggle-button">
-            <div class="menu-line1"></div>
-            <div class="menu-line2"></div>
-            <div class="menu-line3"></div>
-        </div>
-    </nav>
-
-</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    const toggleButton = document.getElementById('toggle-button')
-    const naviList = document.getElementById('navi-list')
-
-    toggleButton.addEventListener('click', () => {
-        naviList.classList.toggle('active');
-    })
+$(document).ready(function() {
+    var isMenuButton = false;
+    
+    $('#menubutton').on('click', function(){
+        if (!isMenuButton) {
+            $(this).addClass('active');
+            $('#navbar').addClass('active');
+            $('body').addClass('content-hidden');
+            $('body').css('overflow', 'hidden');
+            isMenuButton = true;
+        } else {
+            $(this).removeClass('active');
+            $('#navbar').removeClass('active');
+            $('body').removeClass('content-hidden');
+            $('body').css('overflow', ''); 
+            isMenuButton = false;
+        }
+    });
+});
 </script>
-<body>
-    <fieldset class="field-desc">
-    <p class="title">Changelog</p>
-    </fieldset>
-</body>
+    
+<div id="navbar">
+    <div id="imgcontent">
+        <a href="/index.html" style="background-color: transparent;"><img src="/images/HexaCore.png" id="navlogo">
+    </div>
+        <p id="logotxt">IceCool Tech's Repo</p></a>
+        <div id="menubutton">
+            <a id="menulineT"></a>
+            <a id="menulineB"></a>
+        </div>
+    <div id="menuContainerD">
+            <a href="/store.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">Store</p>
+        </a>
+            <a href="/news.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">News</p>
+        </a>
+            <a href="/about.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">About Us</p>
+        </a>
+            <a href="/contact.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">Contact</p>
+        </a>
+     </div>
+</div>
 
-<body>
-    <fieldset class="field-desc">
-        <p class="header-external">Version 1.1.5</p>
-        <p style="font-weight: bold;margin-top: 20px;">What's New?</p>
-        <li>Minor fixes</li>
-    </fieldset>
-</body>
+<div id="RC">
+    <div class="container">
+        <p class="RCtit">What's New?</p>
+        <p id="sub2">IceCool Tech's Repo recieves regular updates bringing new features, enhancements, and fixes to ensure the best possible user experience.</p>
+        <p id="cfu"><a href="/changelog.html" style="text-decoration: none;color: white;">Check for Updates</a></p>
+    </div>
+</div>
 
-<body>
-    <fieldset class="field-desc">
-        <p class="header-external">Version 1.1.4</p>
-        <p style="font-weight: bold;margin-top: 20px;">What's New?</p>
-        <li>Smoother transitions when hovering over links</li>
-    </fieldset>
-</body>
+<div id="RC1">
+    <div class="container">
+        <p class="RCtit1">Latest Release</p>
+        <p id="sub3">Version 0.1.2</p>
+        <p style="color: white;margin-top: 25px;padding-bottom: 35px;">This update introduces a redesigned changelog page allowing you to view update release notes as well as the ability to manually check for and install available updates. </p>
+    </div>
+</div>
 
-<body>
-    <fieldset class="field-desc">
-        <p class="header-external">Version 1.1.3</p>
-        <p style="font-weight: bold;margin-top: 20px;">What's New?</p>
-        <li>Fixed Package Information not displaying properly in some Store Pages </li>
-    </fieldset>
-</body>
+<fieldset class="field-desc">
+    <p class="header-external">Version 0.1.1</p>
+    <p style="font-weight: 600;margin-top: 10px">Release Notes</p><br>
+    <li>Improved error handling</li>
+    <li>Mobile UI improvements</li>
+    <li>Minor fixes</li>
+</fieldset>
 
-<body>
-    <fieldset class="field-desc">
-        <p class="header-external">Version 1.1.2</p>
-        <p style="font-weight: bold;margin-top: 20px;font-size: 18px;">New Features</p>
-        <p style="font-weight: bold;margin-top: 20px">Store</p>
-        <li>Added "Beta" category in Store</li>
-        <p style="font-weight: bold;margin-top: 20px;font-size: 18px;">Enhancements</p>
-        <p style="font-weight: bold;margin-top: 20px">Packages</p>
-        <li>Package information improvements make it easier to read</li>
-        <p style="font-weight: bold;margin-top: 20px;font-size: 18px;">Other Changes</p>
-        <li>Minor fixes</li>
-    </fieldset>
-</body>
+<fieldset class="field-desc">
+    <p class="header-external">Version 0.1.0</p>
+    <p style="font-weight: 600;margin-top: 10px">Initial Preview</p><br>
+</fieldset>
 
-<body>
-    <fieldset class="field-desc">
-        <p class="header-external">Version 1.1.1</p>
-        <p style="font-weight: bold;margin-top: 20px;">What's New?</p>
-        <li>Removed extraneous characters from Newsroom</li>
-    </fieldset>
-</body>
-
-<body>
-    <fieldset class="field-desc">
-        <p class="header-external">Version 1.1</p>
-        <p>This update introduces the HexaCore Store with stock iOS themes and a bold new dark mode that brings content to life. This update also includes other changes and fixes to improve user experience.</p>
-        <p style="font-weight: bold;margin-top: 20px;font-size: 18px;">New Features</p>
-        <p style="font-weight: bold;margin-top: 20px">Store</p>
-        <li>New Store page lets you browse through our entire catalog of themes for jailbroken and unjailbroken devices</li>
-        <li>Categorization with Popular, New Releases, Recently Updated, Stock Themes, and more</li>
-        <li>Store Pages now display package size</li>
-        <p style="font-weight: bold;margin-top: 20px">Dark Mode</p>
-        <li>HexaCore gets a bold new look with Dark Mode</li>
-        <li>Dark Mode automatically adapts to your devices current settings</li>
-        <p style="font-weight: bold;margin-top: 20px;font-size: 18px;">Enhancements</p>
-        <p style="font-weight: bold;margin-top: 20px">Menu Bar</p>
-        <li>Redesigned Menu Bar with subtle transparency that blurs content behind it</li>
-        <li>Mobile user interface improvements</li>
-        <p style="font-weight: bold;margin-top: 20px">Feature Support</p>
-        <li>AFS is now just Feature Support</li>
-        <li>Feature Support is tier’d with Basic, Advanced, and Advanced Pro</li>
-        <p style="font-weight: bold;margin-top: 20px;font-size: 18px;">Other Changes</p>
-        <li>Increased contrast when hovering over hyperlinks</li>
-        <li>Improved mobile user interface</li>
-    </fieldset>
-</body>
-
-<body>
-    <fieldset class="field-desc">
-        <p class="header-external">Version 1.0.1</p>
-        <p style="font-weight: bold;margin-top: 20px">What's New?</p><br>
-        <li>Addresses an issue where adding HexaCore from the About Us page would use an incorrect url</li>
-    </fieldset>
-</body>
-
-<body>
-    <fieldset class="field-desc">
-        <p class="header-external">Version 1.0</p>
-        <p>Introducing, HexaCore. An all-new design for an all-new repo. And then some.</p>
-        <p style="font-weight: bold;margin-top: 20px">What's New?</p><br>
-        <li>Stunning new design with vibrant colors and bright images bring HexaCore to life</li>
-        <li>Redesigned Main Page displays featured theme and quick access to our most popular themes</li>
-        <li>Store Pages beautifully accent the package you're viewing</li>
-        <li>HexaCore Newsroom lets you to stay up to date with package changes, HexaCore updates, and more</li>
-        <li>Changelog lists new features, enchancements, and fixes to HexaCore</li>
-        <li>Add HexaCore to your package manager in the new About Us page</li>
-        <li>New FAQ page for quick answers to your questions</li>
-        <p style="font-weight: bold;margin-top: 20px">Enhancements</p><br>
-        <li>HexaCore logo brings you right to the Home Page with a single tap or click</li>
-        <li>Quick links throughout the repo allow easy access to more information</li>
-        <li>Formatted for desktop and mobile</li>
-        <li>Text highlights let you know when you're hovering over hyperlinks</li>
-    </fieldset><br>
-</body>
-
-<body>
-    <div class="footer-container">
-        <div class="footer">
-            <div class="footer-heading footer-1">
-                <h3>HexaCore</h3>
+<div class="footercontainer">
+    <div class="footer">
+        <img src="/images/HexaCore.png" id="logofooter">
+        <div class="containter">
+        <p id="footertitle">IceCool Tech's Repo</p></div>
+        <div class="footeroptions">
+            <div class="footerlist">
+                <p class="footeritem">About Us</p>
+                <div class="list1">
+                    <p class="options"><a href="./store.html" class="footerlink1">Store</a></p>
+                    <p class="options"><a href="./news.html" class="footerlink1">News</a></p>
+                    <p class="options"><a href="./about.html" class="footerlink1">About Us</a></p>
+                </div>
             </div>
-            <div class="footer-heading footer-2">
-                <h2>About</h2>
-                <a href="/about.html">About Us</a>
-                <a href="/news.html">Newsroom</a>
-                <a href="/changelog.html">Changelog</a>
-            </div>
-                <div class="footer-heading footer-3">
-                <h2>Contact</h2>
-                <a href="mailto: icecooltech1@gmail.com">Email</a>
-                <a href="https://twitter.com/IceCoolTech">Twitter</a>
-                <a href="https://www.youtube.com/@IceCoolTech">YouTube</a>
+            <div class="footerlist">
+                <p class="footeritem">Quick Links</p>
+                <div class="list1">
+                    <p class="options"><a href="./FAQ.html" class="footerlink1">FAQ</a></p>
+                    <p class="options"><a href="./changelog.html" class="footerlink1">Changes</a></p>
+                    <p class="options"><a href="./error.html" class="footerlink1">Option 3</a></p>
+                </div>
             </div>
         </div>
-        <hr class="division">
-        <div class="fh">
-            <p id="fh-text">© 2023 HexaCore</p>
-            <a href="/FAQ.html">FAQ</a>
-            <a href="/terms.html">Terms</a>
-            <a href="/privacy.html">Privacy Policy</a>
+        <hr id="line">
+        <div class="otheroptions">
+        <div class="list2">
+            <p class="list2item"><a href="./terms.html" class="footerlink2">Terms of Service</a></p>
+        <hr class="divider">
+            <p class="list2item"><a href="./privacy.html" class="footerlink2">Privacy Policy</a></p>
+        <hr class="divider">
+            <p class="list2item"><a href="./contact.html" class="footerlink2">Contact Us</a></p>
+        </div>
+        </div>
+        <div class="cr">
+        <p id="r">IceCool Tech's Repo is not affiliated with Apple, Inc. (c) 2023 IceCool Tech. All Rights Reserved.</p>
         </div>
     </div>
-</body>
+</div>
 
 </html>
