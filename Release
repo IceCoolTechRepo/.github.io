@@ -1,7 +1,7 @@
 Origin: IceCool Tech's Repo
 Label: IceCool Tech's Repo
-Suite: stable
-Version: 0.1.3
+Suite: alpha
+Version: 0.2.0
 Codename: 2020
 Architecture: iphoneos-arm
 Components: main

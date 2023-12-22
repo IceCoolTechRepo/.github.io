@@ -13,243 +13,159 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-width=1.0">
-    <title>Store</title>
-    <link rel="stylesheet" href="css/pages.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/store.css">
-    <link rel="shortcut icon" type="png/favicon" href="/CydiaIcon.png" />
-    <meta name="theme-color" content="#0052CB">
+    <title>Store - IceCool Tech's Repo</title>
+    <link rel="stylesheet" href="/css/redesign.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="shortcut icon" type="png/favicon" href="/favicon.png" />
+    <meta name="theme-color" content="#FFFFFF">
 </head>
 
-<body>
-
-    <nav class="navbar">
-           <a href="/index.html">
-                <img class="primary-icon" src="/images/HexaCore.png" />
-           </a>
-        <ul class="nav-list" id="navi-list">
-            <li class="list-item">
-                <a href="/store.html">Store</a>
-            </li>
-            <li class="list-item">
-                <a href="/news.html">Newsroom</a>
-            </li>
-            <li class="list-item">
-                <a href="/changelog.html">Changelog</a>
-            </li>
-        </ul>
-        <div class="menu" id="toggle-button">
-            <div class="menu-line1"></div>
-            <div class="menu-line2"></div>
-            <div class="menu-line3"></div>
-        </div>
-    </nav>
-
-</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    const toggleButton = document.getElementById('toggle-button')
-    const naviList = document.getElementById('navi-list')
-
-    toggleButton.addEventListener('click', () => {
-        naviList.classList.toggle('active');
-    })
+$(document).ready(function() {
+    var isMenuButton = false;
+    
+    $('#menubutton').on('click', function(){
+        if (!isMenuButton) {
+            $(this).addClass('active');
+            $('#navbar').addClass('active');
+            $('body').addClass('content-hidden');
+            $('body').css('overflow', 'hidden');
+            isMenuButton = true;
+        } else {
+            $(this).removeClass('active');
+            $('#navbar').removeClass('active');
+            $('body').removeClass('content-hidden');
+            $('body').css('overflow', ''); 
+            isMenuButton = false;
+        }
+    });
+});
 </script>
-
-<body>
-    <div class="storeimgcontainer">
-        <div class="storeimgwrapper">
-        <img class="M6" src="/images/M6.png">
-        <img class="M6" src="/images/MS.png">
-        <img class="M6" src="/images/C.png">
-        <img class="M6" src="/images/cali.png">
+    
+<div id="navbar">
+    <div id="imgcontent">
+        <a href="/index.html" style="background-color: transparent;"><img src="/images/HexaCore.png" id="navlogo">
+    </div>
+        <p id="logotxt">IceCool Tech's Repo</p></a>
+        <div id="menubutton">
+            <a id="menulineT"></a>
+            <a id="menulineB"></a>
+        </div>
+    <div id="menuContainerD">
+            <a href="/store.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">Store</p>
+        </a>
+            <a href="/news.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">News</p>
+        </a>
+            <a href="/about.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">About Us</p>
+        </a>
+            <a href="/contact.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">Contact</p>
+        </a>
+     </div>
+    <div id="banner">
+        <div class="container">
+            <p id="bannertxt">Welcome to the all new store.</p>
         </div>
     </div>
-</body>
+</div>
 
-<body>
-    <fieldset class="field-desc">
-        <p class="title-store">Jailbroken</p>
-    </fieldset>
-</body>
+<div id="filterContainer">
+    <a href="/store/themes.html" class="filtertxtlink"><div class="filterBG">
+        <p class="filtertxt">Themes</p>
+    </div></a>
+    <a href="/store/wallpaper.html" class="filtertxtlink"><div class="filterBG">
+        <p class="filtertxt">Wallpaper</p>
+    </div></a>
+    <a href="/error.html" class="filtertxtlink"><div class="filterBG">
+        <p class="filtertxt">Compare</p>
+    </div></a>
+</div>
 
-<body>
-    <fieldset class="field-desc">
-        <p class="header-store">Popular Themes</p>
-    </fieldset>
-</body>
+<div id="StoreHead">
+    <div class="container">
+        <p class="herotit">Welcome to the Store!</p>
+        <p class="herodesST">Filter by category, browse items, and compare. All in one place.</p>
+    </div>
+</div>
 
-<body>
-    <fieldset class="field-desc">
-       <div class="div1">
-           <img class="logostore" src="/images/Modern6.png">
-           <div class="div2">
-           <span class="header-external"><a href="/modern6.html" class="main-link1">Modern 6</a></span>
-           <br>
-           <span style="font-weight: bold;">The World's Most Advanced iOS 6 Theme. Ever.</span>
-       </div>
-   </fieldset>
-   </body>
+<div class="storeleadcont">
+    <p class="storelead">Featured</p>
+</div>
 
-   <body>
-    <fieldset class="field-desc">
-       <div class="div1">
-           <img class="logostore" src="/images/MobileSur.png">
-           <div class="div2">
-           <span class="header-external"><a href="/mobilesur.html" class="main-link2">Mobile Sur</a></span>
-           <br>
-           <span style="font-weight: bold;">Big Sur in Your Pocket.</span>
-       </div>
-   </fieldset>
-   </body>
+<div id="promo1">
+    <img src="/images/M6Blurred.png">
+    <p class="promotxt"><a href="/store/modern6.html" style="text-decoration: none;">Modern 6</a><a class="chevron"></a></p>
+</div>
 
-   <body>
-    <fieldset class="field-desc">
-       <div class="div1">
-           <img class="logostore" src="/images/ClassiciOS.png">
-           <div class="div2">
-           <span class="header-external"><a href="/classicios.html" class="main-link3">Classic iOS</a></span>
-           <br>
-           <span style="font-weight: bold;">What's Old is New. Again.</span>
-       </div>
-   </fieldset>
-   </body>
+<div id="promo1">
+    <img src="/images/Obstinatehero.png">
+    <p class="walltitle">Obstinate</p>
+    <p class="wallsub">From IceCool Tech’s iOS 17 Concept</p>
+    <p class="walllink"><a href="/error.html" style="color: rgb(255, 255, 255, .85);text-decoration: none;">View</a></p>
+</div>
 
-<body>
-    <fieldset class="field-desc">
-        <p class="header-store">New Releases</p>
-    </fieldset>
-</body>
+<div class="storeleadcont">
+    <p class="storelead">New Releases</p>
+</div>
 
-<body>
-    <fieldset class="field-desc">
-       <div class="div1">
-           <img class="logostore" src="/images/calilogo.png">
-           <div class="div2">
-           <span class="header-external"><a href="/cali.html" class="main-link4">Cali</a></span>
-           <br>
-           <span style="font-weight: bold;">Catalina on iOS.</span>
-       </div>
-   </fieldset>
-   </body>
+<div id="promo1" style="background-color: rgb(135, 146, 160);">
+    <p class="walltitle">No New Releases</p>
+    <p class="wallsub">When new releases are available, they will appear here.</p>
 
-   <body>
-    <fieldset class="field-desc">
-        <p class="header-store">Recently Updated</p>
-    </fieldset>
-</body>
+</div>
 
-<body>
-    <fieldset class="field-desc">
-       <div class="div1">
-           <img class="logostore" src="/images/ClassiciOS.png">
-           <div class="div2">
-           <span class="header-external"><a href="/classicios.html" class="main-link3">Classic iOS</a></span>
-           <br>
-           <span style="font-weight: bold;">What's Old is New. Again.</span>
-       </div>
-   </fieldset>
-   </body>
+<div class="storeleadcont">
+    <p class="storelead">Coming Soon</p>
+</div>
 
-   <body>
-    <fieldset class="field-desc">
-        <p class="header-store" style="color: rgb(184, 0, 0);">Beta</p>
-    </fieldset>
-</body>
+<div id="promo1">
+    <img src="/images/MidnightWaveshero.png">
+    <p class="walltitle">Midnight Waves</p>
+    <p class="wallsub">January 2024</p>
+</div>
 
-<body>
-    <fieldset class="field-desc">
-       <div class="div1">
-           <img class="logostore" src="/images/Nlogo.png">
-           <div class="div2">
-           <span class="header-external"><a href="/neui.html" class="main-link7">NeUI (beta)</a></span>
-           <br>
-           <span style="font-weight: bold;">Modern iOS Symbolism on iOS 12</span>
-       </div>
-   </fieldset>
-   </body>
-
-
-   <body>
-    <fieldset class="field-desc">
-        <p class="header-store">Coming Soon</p>
-    </fieldset>
-</body>
-
-   <body>
-    <fieldset class="field-desc">
-       <div class="div1">
-           <img class="logostore" src="/images/Vicon.png">
-           <div class="div2">
-           <span class="header-external"><a hef="/venture.html" class="main-link5">Venture</a></span>
-           <br>
-           <span style="font-weight: bold;">Ventura on iOS.</span>
-       </div>
-   </fieldset>
-   </body>
-
-   <body>
-    <fieldset class="field-desc">
-        <p class="title-store">Stock iOS</p>
-    </fieldset>
-</body>
-
-   <body>
-    <fieldset class="field-desc">
-        <p class="header-store">Stock Themes</p>
-    </fieldset>
-</body>
-
-<body>
-    <fieldset class="field-desc">
-       <div class="div1">
-           <img class="logostore" src="/images/Modern6.png">
-           <div class="div2">
-           <span class="header-external"><a href="/modern6se.html" class="main-link1">Modern 6 SE</a></span>
-           <br>
-           <span style="font-weight: bold;">The World's Sharpest iOS 6 Theme. Now on Stock iOS.</span>
-       </div>
-   </fieldset>
-   </body>
-
-   <body>
-    <fieldset class="field-desc">
-       <div class="div1">
-           <img class="logostore" src="/images/MobileSur.png">
-           <div class="div2">
-           <span class="header-external"><a href="/mobilesurse.html" class="main-link2">Mobile Sur SE</a></span>
-           <br>
-           <span style="font-weight: bold;">Big Sur in Your Pocket. Now on Stock iOS.</span>
-       </div>
-   </fieldset>
-   </body>
-
-   <body>
-    <div class="footer-container">
-        <div class="footer">
-            <div class="footer-heading footer-1">
-                <h3>HexaCore</h3>
+<div class="footercontainer">
+    <div class="footer">
+        <img src="/images/HexaCore.png" id="logofooter">
+        <div class="containter">
+        <p id="footertitle">IceCool Tech's Repo</p></div>
+        <div class="footeroptions">
+            <div class="footerlist">
+                <p class="footeritem">About Us</p>
+                <div class="list1">
+                    <p class="options"><a href="/store.html" class="footerlink1">Store</a></p>
+                    <p class="options"><a href="./news.html" class="footerlink1">News</a></p>
+                    <p class="options"><a href="./about.html" class="footerlink1">About Us</a></p>
+                </div>
             </div>
-            <div class="footer-heading footer-2">
-                <h2>About</h2>
-                <a href="/about.html">About Us</a>
-                <a href="/news.html">Newsroom</a>
-                <a href="/changelog.html">Changelog</a>
-            </div>
-                <div class="footer-heading footer-3">
-                <h2>Contact</h2>
-                <a href="mailto: icecooltech1@gmail.com">Email</a>
-                <a href="https://twitter.com/IceCoolTech">Twitter</a>
-                <a href="https://www.youtube.com/@IceCoolTech">YouTube</a>
+            <div class="footerlist">
+                <p class="footeritem">Quick Links</p>
+                <div class="list1">
+                    <p class="options"><a href="./FAQ.html" class="footerlink1">FAQ</a></p>
+                    <p class="options"><a href="./changelog.html" class="footerlink1">Changes</a></p>
+                    <p class="options"><a href="./error.html" class="footerlink1">Option 3</a></p>
+                </div>
             </div>
         </div>
-        <hr class="division">
-        <div class="fh">
-            <p id="fh-text">© 2023 HexaCore</p>
-            <a href="/FAQ.html">FAQ</a>
-            <a href="/terms.html">Terms</a>
-            <a href="/privacy.html">Privacy Policy</a>
+        <hr id="line">
+        <div class="otheroptions">
+        <div class="list2">
+            <p class="list2item"><a href="./terms.html" class="footerlink2">Terms of Service</a></p>
+        <hr class="divider">
+            <p class="list2item"><a href="./privacy.html" class="footerlink2">Privacy Policy</a></p>
+        <hr class="divider">
+            <p class="list2item"><a href="./contact.html" class="footerlink2">Contact Us</a></p>
+        </div>
+        </div>
+        <div class="cr">
+        <p id="r">IceCool Tech's Repo is not affiliated with Apple, Inc. (c) 2023 IceCool Tech. All Rights Reserved.</p>
         </div>
     </div>
-</body>
+</div>
 
 </html>
+
