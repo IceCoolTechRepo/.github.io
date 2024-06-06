@@ -1,4 +1,4 @@
-# IceCool Tech's Repo 
+# iTax
 
-IceCool Tech's Themes
+The Ultimate Cost Calculator
 
