@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53XD8CFRYF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-53XD8CFRYF');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>iTax</title>
+    <link rel="stylesheet" href="/css/redesign.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="shortcut icon" type="png/favicon" href="/favicon.png" />
+    <meta name="theme-color" content="#000000">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    var isMenuButton = false;
+    
+    $('#menubutton').on('click', function(){
+        if (!isMenuButton) {
+            $(this).addClass('active');
+            $('#navbar').addClass('active');
+            $('body').addClass('content-hidden');
+            $('body').css('overflow', 'hidden');
+            isMenuButton = true;
+        } else {
+            $(this).removeClass('active');
+            $('#navbar').removeClass('active');
+            $('body').removeClass('content-hidden');
+            $('body').css('overflow', ''); 
+            isMenuButton = false;
+        }
+    });
+});
+</script>
+    
+<div id="navbar">
+    <div id="imgcontent">
+        <a href="/index.html" id="logobg"><img src="/images/iTaxLogo.png" id="navlogo">
+    </div>
+        <p id="logotxt"></p></a>
+        <div id="menubutton">
+            <a id="menulineT"></a>
+            <a id="menulineB"></a>
+        </div>
+    <div id="menuContainerD">
+           <!-- <a href="/store.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">Apps</p>
+        </a> -->
+            <a href="/news.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">News</p>
+        </a>
+            <a href="/error.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">About</p>
+        </a>
+            <a href="/error.html" style="text-decoration: none;background-color: transparent;">
+            <p class="navoptiontxt">Support</p>
+        </a>
+     </div>
+    <div id="banner">
+        <div class="container">
+            <p id="bannertxt">iTax Coming Soon to the Apple App Store</p>
+        </div>
+    </div>
+</div>
+
+<div id="itemHead" style="background: #000000;margin-top: 107px;">
+    <img src="/images/iTax.png" id="M6">
+</div>
+
+<div id="item" style="background: #101010;">
+    <div class="container">
+        <p class="herosub1">The Ultimate Cost Calculator</p>
+        <p class="herolink1"><a href="" class="herolink1">Available Soon</a></p>
+    </div>
+    <img src="/images/iTaxLogo.png" id="M6Promo">
+</div>
+
+<div class="footercontainer">
+    <div class="footer">
+        <img src="/images/iTaxLogo.png" id="logofooter">
+        <div class="containter">
+        <p id="footertitle">iTax</p></div>
+        <div class="footeroptions">
+            <div class="footerlist">
+                <p class="footeritem">About</p>
+                <div class="list1">
+                   <!-- <p class="options"><a href="/store.html" class="footerlink1">Apps</a></p> -->
+                    <p class="options"><a href="/news.html" class="footerlink1">News</a></p>
+                    <p class="options"><a href="/error.html" class="footerlink1">About</a></p>
+                </div>
+            </div>
+            <div class="footerlist">
+                <p class="footeritem">Support</p>
+                <div class="list1">
+                    <p class="options"><a href="/error.html" class="footerlink1">FAQ</a></p>
+                </div>
+            </div>
+        </div>
+        <hr id="line">
+        <div class="otheroptions">
+        <div class="list2">
+            <p class="list2item"><a href="/privacy.html" class="footerlink2">Privacy Policy</a></p>
+        <hr class="divider">
+            <p class="list2item"><a href="/error.html" class="footerlink2">Contact Us</a></p>
+        </div>
+        </div>
+        <div class="cr">
+        <p id="r">(c) 2024 Carter Austin. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,312 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding:0;
+    margin:0;
+}
+
+.footercontainer {
+    width: 100%;
+    margin-top: 25px;
+   }
+
+   .footer {
+    background-color: rgb(0, 0, 0);
+    height: 440px;
+    border-top: 2px solid rgba(216, 216, 216, 0.25);
+   }
+
+   #logofooter {
+    background-color: transparent;
+    float: left;
+    height: 40px;
+    margin-top: 107px;
+    margin-left: 150px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+   }
+
+   #footertitle {
+    margin-bottom: 10px;
+    padding-top: 112px;
+    background-color: black;
+    font-size: 25px;
+    font-weight: 600;
+   }
+
+   .footeroptions {
+    display: flex;
+    float: right;
+    font-size: 20px;
+    margin-right: 145px;
+    margin-top: -75px;
+    flex-direction: row;
+    background-color: transparent;
+   }
+
+   .footerlist {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+    background-color: transparent;
+   }
+
+   .list1 {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: transparent;
+   }
+
+   .options {
+    background-color: transparent;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: 400;
+    transition: .25s;
+   }
+
+   .options:hover {
+    transition: .25s;
+    transform: translateX(-2px);
+   }
+
+   #line32 {
+    width: 83%;
+    border-top: 1px solid #6F6F6F;
+    border-bottom: 0px;
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    background-color: transparent;
+    margin-bottom: 15px;
+   }
+
+   #line {
+    width: 83%;
+    border-top: 3px solid #adadad5d;
+    border-bottom: 0px;
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    background-color: transparent;
+    margin-bottom: 15px;
+   }
+
+   .list2 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+   }
+
+   .divider {
+    height: 13px;
+    border-radius: 25px;
+    border-left: 2px solid #adadad5d;
+    border-right: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+   }
+
+   .otheroptions {
+    width: 83%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    background-color: transparent;
+   }
+
+   .cr {
+    color: white;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+   }
+
+   #r {
+    background-color: transparent;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 100px;
+   }
+
+   .footeritem {
+    background-color: transparent;
+    font-weight: 500;
+    margin-bottom: 5px;
+   }
+
+   .list2item {
+    background-color: transparent;
+   }
+
+   .footerlink2 {
+    background-color: transparent;
+    font-weight: 400;
+    text-decoration: none;
+   }
+
+   .footerlink1 {
+    background-color: transparent;
+    text-decoration: none;
+   }
+
+@media screen and (min-width: 1200px) and (max-width: 1280px) {
+  .footerlist {
+  margin-left: 85px;
+  background-color: transparent;
+  }
+}
+
+@media screen and (min-width: 1135px) and (max-width: 1199px) {
+  .footerlist {
+    margin-left: 55px;
+    background-color: transparent;
+  }
+ }
+
+ @media screen and (min-width: 1025px) and (max-width: 1134px) {
+  .footerlist {
+   margin-left: 45px;
+   background-color: transparent;
+  }
+
+  .footeroptions {
+    margin-right: 100px;
+  }
+
+  #logofooter {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 945px) and (max-width: 1024px) {
+  .footerlist {
+   margin-left: 35px;
+   background-color: transparent;
+  }
+
+  .footeroptions {
+    margin-right: 80px;
+  }
+
+  #logofooter {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (min-width: 870px) and (max-width: 944px) {
+  .footerlist {
+   margin-left: 35px;
+   background-color: transparent;
+  }
+
+  .footeroptions {
+    margin-right: 50px;
+  }
+
+  #logofooter {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 845px) and (max-width: 869px) {
+  .footerlist {
+   margin-left: 30px;
+   background-color: transparent;
+  }
+
+  .footeroptions {
+    margin-right: 40px;
+  }
+
+  #logofooter {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 844px) {
+  .footer {
+    height: 100%;
+    text-align: center;
+   }
+
+   #logofooter {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    height: 35px;
+    margin-top: 75px;
+    float: none;
+   }
+
+   #footertitle {
+    text-align: center;
+    padding-top: 0px;
+    background-color: black;
+    margin-bottom: 50px;
+   }
+
+   .footeroptions {
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+   }
+
+   .footerlist {
+    margin-top: 10px;
+    margin-left: 0;
+    background-color: transparent;
+  }
+
+  .list1 {
+    background-color: transparent;
+    margin-bottom: 10px;
+   }
+
+   .options {
+    background-color: transparent;
+    padding-top: 5px;
+    text-align: center;
+   }
+
+   .options:hover {
+    transform: translateX(-2px);
+   }
+
+  .otheroptions {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 83%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    background-color: transparent;
+  }
+
+  .list2 {
+    justify-content: center;
+  }
+
+   #r {
+    background-color: transparent;
+    margin-top: 50px;
+    padding-bottom: 20px;
+   }
+}  
